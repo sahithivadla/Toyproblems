@@ -68,7 +68,7 @@ export default class App extends React.Component {
           />
             <Button color='darkgrey'  onPress={this.addTask} title="Add Task" />
           </View>
-        <ScrollView>{tasks}</ScrollView>
+        <ScrollView directionalLockEnabled={false} alwaysBounceVertical={true} style={styles.container}>{tasks}</ScrollView>
       </View>
     );
   }
